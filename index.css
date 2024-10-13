@@ -1,0 +1,164 @@
+/*navbar öğeri için düzenlmeler yapıyorum*/
+.nav-item a{ 
+    color: whitesmoke;
+    margin-right: 35px;
+    
+}
+
+.nav-item a:hover{ color: rgb(229, 205, 66);}
+
+
+.dropdown-menu a{
+    background-color: rgb(205, 50, 50);
+    color: whitesmoke;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.dropdown-menu a:hover{
+    color: rgb(229, 205, 66);
+background-color: rgb(205, 50, 50);
+}
+
+
+/* slayt haberler için düzenlmeler yapıyorum */
+.carousel-inner img{
+    height: 450px;
+    height: 400px;
+     
+}
+
+
+
+.haberSlaytları {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 40px;
+}
+
+.haberKartları1, .haberKartları2 {
+    display: flex;
+    flex-direction: row; /* Kartları alt alta sıralamak için */
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+/* haber kartları için düzenlmeler yapıyorum */
+
+
+
+@media (max-width: 576px) {
+    .haberKartları1, .haberKartları2 {
+        flex-direction: column; /* Kartları alt alta diz */
+        align-items: center; /* Kartların ortalanmasını sağlar */
+    }
+
+    .haberKartları1 div, .haberKartları2 div {
+        width: 100%; /* Kartların tam genişlikte olmasını sağlar */
+        margin-right: 0; /* Sağdaki boşluğu kaldır */
+        margin-bottom: 1rem; /* Kartlar arasında biraz boşluk bırak */
+    }
+
+    .haberKartları1 img, .haberKartları2 img {
+        width: 100%; /* Resimlerin tam genişlikte olmasını sağlar */
+        height: auto; /* Resimlerin oranını korur */
+    }
+}
+
+.haberKartları1 div:hover, .haberKartları2 div:hover {
+    transform: scale(1.1);
+color:rgba(205, 50, 50, 0.592);
+
+}
+
+.haberKartları1 div, .haberKartları2 div {
+    margin-right: 4rem;
+    width: 250px;
+    align-items: center;
+    
+}
+
+.haberKartları1 p, .haberKartları2 p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Görüntülenecek satır sayısı */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 0;
+    margin-left: 0;
+    text-decoration: none;
+}
+
+.haberKartları1 img, .haberKartları2 img {
+    width: 300px;
+    height: 250px;
+}
+
+.haberKartları1 a , .haberKartları2 a{
+    background-color: rgb(205, 50, 50);
+    color: rgb(229, 205, 66);
+    color: black;
+}
+
+.haberKartları1 a:hover, .haberKartları2 a:hover{
+  text-decoration: none;
+    color: black;
+}
+a.btn.btn-primary:hover {
+   background-color:  rgb(229, 205, 66); /* Üzerine gelindiğinde arka plan rengi */
+}
+
+
+/* iletişim kartı için düzenlmeler yapıyorum */
+
+/* Mobil görünüm için stil ayarları */
+@media (max-width: 768px) {
+    .communication {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Alt alta dizilmesini sağlar */
+        align-items: center;    /* Ortalamak için */
+        text-align: center;     /* Yazıyı ortalamak için */
+    }
+
+    .socialMedia {
+        flex-direction: column;
+        width: 100%; 
+        list-style-type: none;  /* Liste işaretlerini kaldırır */
+        padding: 0;             /* Varsayılan padding'i kaldırır */
+        margin: 0;              /* Varsayılan margin'i kaldırır */
+    }
+
+    .list-group-item {
+    width: 100%;
+     text-align: center;
+     margin-left: 0;
+     margin-right: 0;
+    }
+    .list-group-item a {
+        color: black;
+     }
+    .list-group-item a:hover {
+       text-decoration: none;
+    }
+}
+
+.list-group-item{
+    width: 20%;
+     text-align: center;
+     margin-left: 0;
+     margin-right: 0;
+
+}
+.socialMedia{
+    display: flex;
+}
+.list-group-item a {
+    color: black;
+ }
+ 
+.list-group-item a:hover {
+   text-decoration: none;
+}
+
